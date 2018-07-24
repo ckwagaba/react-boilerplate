@@ -1,0 +1,18 @@
+body {
+  font-family: lato, verdana, sans-serif;
+  margin: 0;
+}
+
+$colors: (
+  primary: #1B1464,
+  secondary: #BF0005,
+);
+
+$grey: (
+  light: #F1F1F1,
+);
+
+.App {
+  background: map-get($colors, primary);
+  color: map-get($colors, secondary);
+}

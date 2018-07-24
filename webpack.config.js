@@ -1,9 +1,14 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const loadHTML = new HTMLWebpackPlugin({
   template: './src/index.html',
   filename: './index.html'
+});
+
+const loadSass = new ExtractTextPlugin({
+  filename: 'main.css'
 });
 
 const config = {
@@ -21,11 +26,19 @@ const config = {
         test: /\.tsx?$/,
         use: ['babel-loader', 'ts-loader'],
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: loadSass.extract({
+          use: ['css-loader', 'sass-loader'],
+          fallback: 'style-loader'
+        })
       }
     ]
   },
   plugins: [
-    loadHTML
+    loadHTML,
+    loadSass
   ]
 };
 
