@@ -33,6 +33,10 @@ const config = {
           use: ['css-loader', 'sass-loader'],
           fallback: 'style-loader'
         })
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        use: 'file-loader'
       }
     ]
   },

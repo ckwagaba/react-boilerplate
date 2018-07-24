@@ -5,7 +5,8 @@ import './App.scss';
 const App = () => {
   return (
     <div className="App">
-      Hello, World!
+      Hello, World!<br />
+      <img src="../../assets/images/quiz-night.jpg" />
     </div>
   );
 };
