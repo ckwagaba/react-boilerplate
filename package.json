@@ -1,13 +1,15 @@
 {
   "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "Foundation code for modern React applications",
+  "description": "Foundational code for modern React applications",
   "main": "index.js",
   "repository": "https://github.com/ckwagaba/react-boilerplate.git",
   "author": "C.K. Wagaba <ckwagaba@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "path": "^0.12.7",
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
     "webpack": "^4.16.2",
     "webpack-dev-server": "^3.1.5"
   }
