@@ -1,2 +1,2 @@
 # React Boilerplate
-Foundational code for modern react applications
+Foundational code for modern React applications
