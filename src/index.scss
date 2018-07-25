@@ -11,8 +11,3 @@ $colors: (
 $grey: (
   light: #F1F1F1,
 );
-
-.App {
-  background: map-get($colors, primary);
-  color: map-get($colors, secondary);
-}
