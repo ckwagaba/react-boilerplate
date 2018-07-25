@@ -7,7 +7,8 @@
   "author": "C.K. Wagaba <ckwagaba@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "tslint": "tslint src/**/*.{ts,tsx}"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -23,6 +24,8 @@
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "ts-loader": "^4.4.2",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
     "typescript": "^2.9.2",
     "webpack": "^4.16.2",
     "webpack-cli": "^3.1.0",
